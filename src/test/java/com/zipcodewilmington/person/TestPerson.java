@@ -15,7 +15,8 @@ public class TestPerson {
 
         // When
         Person person = new Person();
-
+        person.setName("");
+        person.setAge(Integer.MAX_VALUE);
         // Then
         String actualName = person.getName();
         Integer actualAge = person.getAge();
